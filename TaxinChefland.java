@@ -1,11 +1,15 @@
 import java.util.Scanner;
-public class Fitness {
-    public static void main(String[] args) {
+public class TaxinChefland {
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int tc = sc.nextInt();
         while(tc>0){
             int n = sc.nextInt();
-            System.out.println(n*2*5);
+            if(n>100){
+                System.out.println(n-10);
+            }else{
+                System.out.println(n);
+            }
             tc--;
         }
         sc.close();
